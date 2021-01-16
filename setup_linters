@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+gitignore() {
+  echo node_modules/ >> .gitignore
+}
+
+if [ -z "$1" ]
+then
+  echo "Use the --help flag to checkout the available options."
+  exit 1
+fi
+
