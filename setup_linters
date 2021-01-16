@@ -8,5 +8,10 @@ if [ -z "$1" ]
 then
   echo "Use the --help flag to checkout the available options."
   exit 1
+elif [ $1 == --html ]
+then
+  gitignore
+  npm install --save-dev hint@6.0.x
+  curl -O https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.hintrc
 fi
 
