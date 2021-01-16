@@ -18,6 +18,12 @@ stylelint() {
   curl -O https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.stylelintrc.json
 }
 
+rubocop() {
+  echo gem 'rubocop', '~>0.81.0' >> Gemfile
+  bundle install
+  curl -O https://raw.githubusercontent.com/microverseinc/linters-config/master/ruby/.rubocop.yml
+}
+
 if [ -z "$1" ]
 then
   echo "Use the --help flag to checkout the available options."
@@ -25,8 +31,12 @@ then
 elif [ $1 == --html ]
 then
   github
-  curl -O https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.github/workflows/linters.yml
+  curl https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.github/workflows/linters.yml -o .github/workflows/linters.yml
   gitignore
   webhint
   stylelint
+elif [ $1 == --ruby ]
+then
+  github
+  curl -O https://raw.githubusercontent.com/microverseinc/linters-config/master/ruby/.github/workflows/linters.yml -o .github/workflows/linters.yml
 fi
