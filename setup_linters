@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+github() {
+  mkdir -p .github/workflows
+}
+
 gitignore() {
   echo node_modules/ >> .gitignore
 }
@@ -20,6 +24,8 @@ then
   exit 1
 elif [ $1 == --html ]
 then
+  github
+  curl -O https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.github/workflows/linters.yml
   gitignore
   webhint
   stylelint
