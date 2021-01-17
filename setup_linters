@@ -56,4 +56,9 @@ then
   gitignore
   eslint
   stylelint javascript
+elif [ $1 == --react ]
+then
+  github react-redux
+  eslint react-redux
+  stylelint react-redux
 fi
