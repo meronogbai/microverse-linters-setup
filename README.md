@@ -60,6 +60,10 @@ Contributions, issues, and feature requests are welcome!
 
 Give a ⭐️ if you like this project!
 
+## Acknowledgements
+
+[Linters Config](https://github.com/microverseinc/linters-config)
+
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
