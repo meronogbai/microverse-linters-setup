@@ -17,16 +17,12 @@ The script supports the following options:
 |--react      |setup react-redux linters      |
 |--help       |list all the available options |
 
-## Built With
-
-- Bash
-
 ## Dependencies
 
 If you're on Linux or macOS, you should have these pre-installed by default.
 
+- bash
 - curl
-- git
 
 ## Installation
 
@@ -37,7 +33,7 @@ Run the following commands one by one to install this script to your system.
 1. `chmod +x ~/bin/setup_linters`
 1. `echo "export PATH=~/bin:\$PATH" >> ~/.bashrc`
 
-**Note**: If you're using zsh as your shell, replace .bashrc in the above command with `.zshrc`.
+**Note**: If you're using zsh as your shell, replace `.bashrc` in the above command with `.zshrc`.
 
 ## Usage
 
