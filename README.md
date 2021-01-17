@@ -37,7 +37,7 @@ Run the following commands one by one to install this script to your system.
 1. `chmod +x ~/bin/setup_linters`
 1. `echo "export PATH=~/bin:\$PATH" >> ~/.bashrc`
 
-**Note**: If you're using zsh as your shell, replace .bashrc in the above command with .zshrc.
+**Note**: If you're using zsh as your shell, replace .bashrc in the above command with `.zshrc`.
 
 ## Usage
 
