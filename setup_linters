@@ -34,6 +34,13 @@ if [ -z "$1" ]
 then
   echo "Use the --help flag to checkout the available options."
   exit 1
+elif [ $1 == --help ]
+then
+  echo "--html                 setup html&css linters"
+  echo "--ruby                 setup ruby linters"
+  echo "--rails                setup rails linters"
+  echo "--javascript           setup javascript linters"
+  echo "--react                setup react-redux linters"
 elif [ $1 == --html ]
 then
   github html-css
@@ -62,7 +69,6 @@ then
   eslint react-redux
   stylelint react-redux
 else
-then
   echo "Invalid option. Use the --help flag to checkout all the options."
   exit 1
 fi
