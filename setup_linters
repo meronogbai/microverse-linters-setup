@@ -61,4 +61,8 @@ then
   github react-redux
   eslint react-redux
   stylelint react-redux
+else
+then
+  echo "Invalid option. Use the --help flag to checkout all the options."
+  exit 1
 fi
