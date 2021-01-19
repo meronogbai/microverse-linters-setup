@@ -2,7 +2,7 @@
 
 # Microverse Linters Setup
 
-> This is a bash script that lets you install and setup linters quickly for the programming langues used in the Microverse curriculum.
+> This is a bash script that lets you install and setup linters quickly for the programming languages used in the Microverse curriculum.
 
 ![screenshot](./app_screenshot.png)
 
@@ -37,7 +37,7 @@ Run the following commands one by one to install this script to your system.
 
 ## Usage
 
-1. `cd` into your project directory
+1. `cd` into your project directory.
 1. Run `setup_linters --help` to view the available languages.
 1. Run the script with the programming language of your project and you're good to go.
 
