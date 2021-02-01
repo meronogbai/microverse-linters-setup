@@ -56,7 +56,7 @@ then
   github ror
   gitignore
   stylelint ror
-  rubocop ruby
+  rubocop ror
 elif [ $1 == --javascript ]
 then
   github javascript
