@@ -41,7 +41,7 @@ Run the following commands one by one to install this script to your system.
 1. Run `setup_linters --help` to view the available languages.
 1. Run the script with the programming language of your project and you're good to go.
 
-## Authors
+## Author
 
 👤 **Meron Ogbai**
 
@@ -59,7 +59,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgements
 
-[Linters Config](https://github.com/microverseinc/linters-config)
+[Microverse Linters Config](https://github.com/microverseinc/linters-config)
 
 ## 📝 License
 
