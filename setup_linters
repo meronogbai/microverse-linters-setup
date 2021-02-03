@@ -27,7 +27,7 @@ rubocop() {
 
 eslint() {
   npm install --save-dev eslint@6.8.x eslint-config-airbnb-base@14.1.x eslint-plugin-import@2.20.x babel-eslint@10.1.x
-  curl -O https://raw.githubusercontent.com/microverseinc/linters-config/master/javascript/.eslintrc.json
+  curl -O "https://raw.githubusercontent.com/microverseinc/linters-config/master/${1}/.eslintrc.json"
 }
 
 if [ -z "$1" ]
@@ -61,7 +61,7 @@ elif [ $1 == --javascript ]
 then
   github javascript
   gitignore
-  eslint
+  eslint javascript
   stylelint javascript
 elif [ $1 == --react ]
 then
