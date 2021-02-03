@@ -25,11 +25,15 @@ rubocop() {
   curl -O "https://raw.githubusercontent.com/microverseinc/linters-config/master/${1}/.rubocop.yml"
 }
 
-eslint() {
+eslint-js() {
   npm install --save-dev eslint@6.8.x eslint-config-airbnb-base@14.1.x eslint-plugin-import@2.20.x babel-eslint@10.1.x
-  curl -O "https://raw.githubusercontent.com/microverseinc/linters-config/master/${1}/.eslintrc.json"
+  curl -O https://raw.githubusercontent.com/microverseinc/linters-config/master/javascript/.eslintrc.json
 }
 
+eslint-react() {
+  npm install --save-dev eslint@7.11.x eslint-config-airbnb@18.1.x eslint-plugin-import@2.22.x eslint-plugin-jsx-a11y@6.2.x eslint-plugin-react@7.20.x eslint-plugin-react-hooks@2.5.x babel-eslint@10.1.x 
+  curl -O https://raw.githubusercontent.com/microverseinc/linters-config/master/react-redux/.eslintrc.json
+}
 if [ -z "$1" ]
 then
   echo "Use the --help flag to checkout the available options."
@@ -54,19 +58,18 @@ then
 elif [ $1 == --rails ]
 then
   github ror
-  gitignore
   stylelint ror
   rubocop ror
 elif [ $1 == --javascript ]
 then
   github javascript
   gitignore
-  eslint javascript
+  eslint-js
   stylelint javascript
 elif [ $1 == --react ]
 then
   github react-redux
-  eslint react-redux
+  eslint-react
   stylelint react-redux
 else
   echo "Invalid option. Use the --help flag to checkout all the options."
