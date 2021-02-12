@@ -35,9 +35,9 @@ Run the following commands one by one to install this script to your system.
 
 **Note**: If you're using zsh as your shell, replace `.bashrc` in the above command with `.zshrc`.
 
-## Update
+## Updating
 
-Run the 2nd and third commands in the installation section.
+Run the second and third commands in the installation section.
 
 ## Usage
 
