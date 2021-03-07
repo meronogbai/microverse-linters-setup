@@ -24,9 +24,10 @@ If you're on Linux or macOS, you should have these pre-installed by default.
 - bash
 - curl
 
-## Installation
+## Install
 
-Run the following commands one by one to install this script to your system.
+To install the script just place the [script](./setup_linters) somewhere in your PATH.
+The following commannds are just one way of doing so.
 
 1. `mkdir -p ~/bin`
 1. `curl https://raw.githubusercontent.com/meronokbay/microverse-linters-setup/main/setup_linters -o ~/bin/setup_linters`
@@ -35,9 +36,9 @@ Run the following commands one by one to install this script to your system.
 
 **Note**: If you're using zsh as your shell, replace `.bashrc` in the above command with `.zshrc`.
 
-## Updating
+## Update
 
-Run the second and third commands in the installation section.
+Run the second and third commands in the install section.
 
 ## Usage
 

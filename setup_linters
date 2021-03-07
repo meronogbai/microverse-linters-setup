@@ -20,7 +20,7 @@ stylelint() {
 }
 
 rubocop() {
-  echo gem \'rubocop\', \'~\>0.81.0\' >> Gemfile
+  echo gem \'rubocop\', \'~\>1.4.1\' >> Gemfile
   bundle install
   curl -O "https://raw.githubusercontent.com/microverseinc/linters-config/master/${1}/.rubocop.yml"
 }
